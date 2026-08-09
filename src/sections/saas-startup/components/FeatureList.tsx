@@ -9,7 +9,7 @@ export function FeatureList({ features }: FeatureListProps) {
     <ul className="flex flex-col gap-3 text-sm text-slate-600">
       {features.map((feature) => (
         <li key={feature} className="flex items-start gap-2">
-          <RiCheckLine size={18} className="mt-0.5 shrink-0 text-green-600" />
+          <RiCheckLine size={18} className="mt-0.5 shrink-0 text-accent-600" />
           <span>{feature}</span>
         </li>
       ))}

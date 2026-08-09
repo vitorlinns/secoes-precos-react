@@ -13,14 +13,14 @@ export function PlanHeader({ plan, period }: PlanHeaderProps) {
   return (
     <th
       className={`border-b border-l border-slate-200 p-3 text-center align-bottom sm:p-6 ${
-        plan.highlighted ? 'bg-orange-600' : ''
+        plan.highlighted ? 'bg-accent-600' : ''
       }`}
     >
       <div className="flex flex-col items-center">
         {plan.badge ? (
           <span
             className={`rounded-full px-2 py-1 text-[10px] font-semibold tracking-wide uppercase sm:px-2.5 sm:text-[11px] ${
-              plan.highlighted ? 'bg-white/15 text-white' : 'bg-orange-100 text-orange-700'
+              plan.highlighted ? 'bg-white/15 text-white' : 'bg-accent-100 text-accent-700'
             }`}
           >
             {plan.badge}

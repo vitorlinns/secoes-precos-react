@@ -1,13 +1,14 @@
 import { useBillingPeriod } from '../../hooks/useBillingPeriod'
-import { BillingToggle } from './BillingToggle'
-import { PricingCard } from './PricingCard'
+import { BillingToggle } from './components/BillingToggle'
+import { PricingCard } from './components/PricingCard'
 import { plans } from './data'
+import './theme.css'
 
 export function SaasStartupSection() {
   const { period, toggle } = useBillingPeriod()
 
   return (
-    <section className="flex min-h-[950px] flex-col justify-center border-b border-slate-200 bg-slate-50 px-6 py-20">
+    <section className="saas-theme flex min-h-[950px] flex-col justify-center border-b border-slate-200 bg-slate-50 px-6 py-20">
       <div className="mx-auto w-full max-w-6xl text-center">
         <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">
           Planos para todo tamanho de time

@@ -1,6 +1,6 @@
-import { Badge } from './components/Badge'
-import { Switch } from './components/Switch'
-import type { BillingPeriod } from '../../types/pricing'
+import type { BillingPeriod } from '../../../types/pricing'
+import { Badge } from './Badge'
+import { Switch } from './Switch'
 
 interface BillingToggleProps {
   period: BillingPeriod

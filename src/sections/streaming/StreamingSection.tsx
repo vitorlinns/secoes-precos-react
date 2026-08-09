@@ -4,12 +4,13 @@ import { FeatureRow } from './components/FeatureRow'
 import { PlanFooter } from './components/PlanFooter'
 import { PlanHeader } from './components/PlanHeader'
 import { features, plans } from './data'
+import './theme.css'
 
 export function StreamingSection() {
   const { period, toggle } = useBillingPeriod()
 
   return (
-    <section className="flex min-h-[950px] flex-col justify-center border-b border-slate-200 bg-white px-6 py-24">
+    <section className="streaming-theme flex min-h-[950px] flex-col justify-center border-b border-slate-200 bg-white px-6 py-24">
       <div className="mx-auto w-full max-w-6xl">
         <div>
           <h2 className="text-3xl font-bold tracking-tight text-slate-900 sm:text-4xl">

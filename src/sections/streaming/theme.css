@@ -1,0 +1,5 @@
+.streaming-theme {
+  --color-accent-100: oklch(95.4% 0.038 75.164);
+  --color-accent-600: oklch(64.6% 0.222 41.116);
+  --color-accent-700: oklch(55.3% 0.195 38.402);
+}

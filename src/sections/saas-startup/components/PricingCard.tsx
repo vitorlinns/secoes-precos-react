@@ -1,9 +1,9 @@
-import { Badge } from './components/Badge'
-import { Button } from './components/Button'
-import { FeatureList } from './components/FeatureList'
-import { IconBadge } from './components/IconBadge'
-import { PriceTag } from './components/PriceTag'
-import type { BillingPeriod, PricingPlan } from '../../types/pricing'
+import type { BillingPeriod, PricingPlan } from '../../../types/pricing'
+import { Badge } from './Badge'
+import { Button } from './Button'
+import { FeatureList } from './FeatureList'
+import { IconBadge } from './IconBadge'
+import { PriceTag } from './PriceTag'
 
 interface PricingCardProps {
   plan: PricingPlan
@@ -15,7 +15,7 @@ export function PricingCard({ plan, period }: PricingCardProps) {
     <div
       className={`flex flex-col rounded-2xl border p-8 text-left ${
         plan.highlighted
-          ? 'border-green-500 bg-white shadow-xl shadow-green-500/10 ring-1 ring-green-500'
+          ? 'border-accent-500 bg-white shadow-xl shadow-accent-500/10 ring-1 ring-accent-500'
           : 'border-slate-200 bg-white shadow-sm'
       }`}
     >

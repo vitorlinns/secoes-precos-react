@@ -9,7 +9,7 @@ export function PlanFooter({ plan }: PlanFooterProps) {
   return (
     <td
       className={`cursor-pointer border-l border-slate-200 p-3 text-center transition-colors sm:p-6 ${
-        plan.highlighted ? 'bg-orange-600 hover:bg-orange-700' : 'hover:bg-slate-50'
+        plan.highlighted ? 'bg-accent-600 hover:bg-accent-700' : 'hover:bg-slate-50'
       }`}
     >
       <span
